@@ -1,0 +1,99 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint:recommended",
+    "airbnb-base"
+  ],
+  "plugins": [
+    "codeceptjs",
+    "import"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "env": {
+    "es6": true,
+    "codeceptjs/codeceptjs": true
+  },
+  "rules": {
+    "arrow-parens": [2, "as-needed"],
+    "quotes": [2, "single", "avoid-escape"],
+    "prefer-template": 2,
+    "linebreak-style": 2,
+    "no-console": 0,
+    "no-debugger": 1,
+    "no-var": 1,
+    "no-mixed-operators": 0,
+    "no-unused-expressions": 0,
+    "semi": [
+      1,
+      "always"
+    ],
+    "no-trailing-spaces": 0,
+    "eol-last": 2,
+    "no-confusing-arrow": [2, { "allowParens": true }],
+    "no-unused-vars": [2, { "vars": "all", "args": "after-used" }],
+    "object-curly-newline": ["error", { "consistent": true }],
+    "comma-dangle": ["error", {
+      "arrays": "always-multiline",
+      "objects": "always-multiline",
+      "imports": "never",
+      "exports": "never",
+      "functions": "ignore"
+    }],
+    "no-underscore-dangle": 0,
+    "no-alert": 0,
+    "no-lone-blocks": 0,
+    "no-param-reassign": 0,
+    "no-plusplus": 0,
+    "no-extra-boolean-cast": 1,
+    "no-continue": 1,
+    "no-restricted-syntax": 2,
+    "no-use-before-define": 2,
+    "no-return-await": 0,
+    "require-await": 0,
+    "no-multi-assign": 0,
+    "import/no-named-as-default": 1,
+    "import/no-duplicates": [
+      0,
+      {
+        "commonjs": true
+      }
+    ],
+    "import/no-unresolved": [
+      0,
+      {
+        "commonjs": true
+      }
+    ],
+    "import/export": 1,
+    "import/prefer-default-export": 0,
+    "import/newline-after-import": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/imports-first": 0,
+    "max-len": 0,
+    "quote-props": 2,
+    "global-require": 2,
+    "class-methods-use-this": 0,
+    "spaced-comment": 1
+  },
+  "globals": {
+    "inject": true,
+    "locate": true,
+    "Given": true,
+    "When": true,
+    "Then": true,
+    "actor": false,
+    "Feature": false,
+    "Scenario": false,
+    "Before": false,
+    "After": false,
+    "BeforeSuite": false,
+    "AfterSuite": false,
+    "within": false,
+    "Data": false,
+    "DataTable": false,
+    "Helper": false
+  }
+}

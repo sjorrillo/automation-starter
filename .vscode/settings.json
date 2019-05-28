@@ -1,0 +1,20 @@
+{
+  "cucumberautocomplete.steps": [
+    "/app/**/steps/*.js",
+    "/app/common/genericSteps.js"
+  ],
+  "cucumberautocomplete.syncfeatures": "/app/**/features/*feature",
+  "cucumberautocomplete.strictGherkinCompletion": true,
+  "cucumberautocomplete.customParameters": [
+    {
+      "parameter": "{ab}",
+      "value": "(a|b)"
+    }
+  ],
+  "editor.quickSuggestions": {
+    "comments": false,
+    "strings": true,
+    "other": true
+  },
+  "git.ignoreLimitWarning": true
+}
